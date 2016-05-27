@@ -1,0 +1,97 @@
+.station-staff {
+	h1 {
+		text-align: center;
+		font-size: 2.25em;
+	}
+	h2 {
+		text-align: center;
+		margin-bottom: 0;
+		font-size: 2em;
+		&::after {
+	        display: block;
+	        content: "";
+	        width: 4em;
+			margin: 0 auto;
+	        opacity: 0.8;
+	        border-bottom: 1px solid #ccc;
+	        padding-bottom: .5em;
+		}
+	}
+	.staff-profile {
+		margin-bottom: 6em;
+	}
+	figure {
+		margin: 0;
+	}
+			figcaption h3 {
+				font-size: 1.25em;
+				margin-bottom: 0;
+			}
+			figcaption {
+				margin-top: 0;
+				font-size: 1.2em;
+			}
+	p {
+		margin: 0;
+	}
+
+	.banders h3 {
+		margin: 3em 0 0.5em;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	img {
+		margin: 1em 0 0 0;
+		max-width: 300px;
+	}
+
+	.bandaides {
+		margin-bottom: 5em;
+	}
+}
+
+@media screen and (min-width: 680px) {
+	.station-staff {
+		.staff-profile {
+			&:first-of-type {
+				margin-top: 0;
+			}
+			@include clearfix();
+			margin-bottom: 5em;
+			p {
+				margin-top: 9em;
+			}
+			figure {
+				display: inline;
+				float: left;
+				margin-right: 1.5em;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.station-staff {
+		h2 {
+			margin-top: 2em;
+		}
+		.staff-profile {
+			margin-bottom: 3em;
+			figure {
+				float: left;
+				margin-right: 2.5em;
+				margin-left: -2.5em;
+			}
+			p {
+				margin-top: 7em;
+			}
+			figcaption {
+				p {
+					margin-top: 0;
+				}
+
+			}
+		}
+	}
+}

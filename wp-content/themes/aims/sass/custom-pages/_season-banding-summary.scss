@@ -1,0 +1,28 @@
+.summary-table {
+	h1 {
+		text-align: center;
+	}
+	margin: 3em auto;
+	&.site-main {
+		max-width: 2000px;
+		width: 90%;
+		overflow: scroll;
+	}
+	td {
+		border: 1px solid black;
+		text-align: center;
+		padding: 2px 4px;
+	}
+	tr {
+		&:first-of-type, &:last-of-type {
+			font-weight: bold;
+		}
+		&:nth-of-type(odd) {
+			background-color: #eee;
+		}
+		&>td:first-of-type {
+			text-align: left;
+		}
+	}
+
+}

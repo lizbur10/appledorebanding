@@ -1,0 +1,254 @@
+/* Home Page - Image Slider */
+
+#image-slider {
+    display: none;
+    position: relative;
+    height: 276px;
+    width: 100%;
+    overflow: hidden;
+    div {
+        position: absolute;
+        left: 150%;
+    }
+    &:after {
+        content: "";
+        display: block;
+        margin-top: 237px;
+        width: 100%;
+        height: 8px;
+        background-color: $color__green;
+    }
+}
+
+.slides {
+    @include clearfix();
+    position: relative;
+    height: 240px;
+    margin-top: -2rem;
+    margin-bottom: 26px;
+    padding: 3px;
+    list-style: none;
+    margin: 0;
+    object-fit: cover;
+    object-position: 0 0;
+    overflow: hidden;
+}
+
+.slider-caption {
+    display: none;
+    float: right;
+    margin-top: 245px;
+    padding-right: 15px;
+    padding-top: 5px;
+    font-size: 0.9em;
+    font-style: italic;
+    z-index: 100;
+}
+
+.site-main.home-page {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    margin-bottom: 3em;
+}
+
+.home-general-info h2, .home-general-info p {
+    display: none;
+}
+
+.home-general-info p:first-of-type {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nabc-certs {
+    max-width: 400px;
+    margin: 0 auto 3em auto;
+    padding: 1em 1em 1em 2em;
+    margin-bottom: 2em;
+    border-top: 1px solid $color__yellow;
+    border-bottom: 1px solid $color__yellow;
+    background-color: $color__yellow-light;
+    ul li:before {
+        display: none;
+    }
+    i {
+        margin-left: -1em;
+        color: $color__blue-medium;
+    }
+}
+
+
+
+.home-current-season {
+    background-color: $color__yellow-light;
+/*     background-color: $color__yellow;
+ */    margin: 1em 1.5em;
+    padding: 1em 1.8em;
+    z-index: 2;
+    h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+    h3 { 
+        margin-top: 3em;
+    }
+    p {
+        margin-bottom: 0.5em;
+    }
+
+    
+    .date-box {
+        display: block;
+        width: 12em;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 3em auto 0 auto;
+        border: 1px solid $color__green; 
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 6px 6px 3px #ccc;
+        padding: 0.5em 0;
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    ul li {
+        margin-left: 1em;
+
+    }
+   .new-info {
+        span {
+            display: inline-block;
+            font-family: Merriweather, 'Marcellus SC';
+            background-color: $color__green;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: white;
+            padding: 2px 6px;
+            margin-right: 6px;
+            border-radius: 5px;
+            font-size: 0.75em;
+        }
+        h3 {
+            margin-top: 1.5em;
+        }
+    }
+}
+
+.home-news {
+    margin-bottom: 2em;
+    ul {
+        margin: 0 0 0 1em;
+        padding: 0;
+    }
+    li {
+        padding-left: 1em; 
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin-bottom: 0;
+        color: #555;
+    }
+    .news-date {
+        font-weight: bold;
+    }
+
+    li::after {
+        display: block;
+        content: "";
+        margin: 1em 0 1em -1em;
+        width: 100%;
+        border-bottom: solid 1px #ccc;
+        opacity: 0.5;
+    }
+    
+    li:last-of-type::after {
+        border-bottom: none;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    #image-slider {
+        display: block;
+    }
+    .slider-caption {
+        display: block;
+        width: 100%;
+        text-align: right;
+        overflow: visible;
+    }
+    .home-general-info h2, .home-general-info p {
+        display: block;
+    }
+    .home-general-info p:first-of-type {
+        font-style: normal;
+        text-align: left;
+        max-width: inherit;
+        margin: inherit;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .site-main.home-page {
+        @include clearfix();
+        position: relative;
+        margin: 4em;
+        margin-bottom: 1em;
+        max-width: 1274px;
+    }
+    .home-general-info, .home-news {
+        width: 25%;
+        h2 {
+            margin-top: 0;
+        }
+    }
+    .home-general-info {
+        float: left;
+        .nabc-certs {
+            margin-left: -1em;
+        }
+    }
+
+    .nabc-certs {
+        background-color: $color__yellow-medium;
+        border: 1px solid $color__yellow;
+    }
+
+    .home-current-season {
+        background-color: $color__yellow-light;
+        background: -webkit-linear-gradient(bottom, $color__yellow, white); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom, $color__yellow, white); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom, $color__yellow, white); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(bottom, $color__yellow, white); /* Standard syntax */
+        width: 40%;
+        float: left;
+        margin: -4em 5% 1em;
+        padding: 3em 2em;
+    }
+
+    .home-news {
+        float: right;
+        li:last-of-type:after {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .site-main.home-page {
+        margin: 4em auto 1em;
+    }
+}

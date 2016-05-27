@@ -1,0 +1,54 @@
+a {
+        font-weight: bold;
+		color: $color__link;
+        text-decoration: none;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+                text-decoration: underline;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.nav-previous a:before {
+	content: "« ";
+}
+
+.nav-next a:after {
+	content: " »";
+}
+
+.bottom-nav, .top-nav {
+	@include clearfix();
+	font-size: 0.9em;
+	margin: 0 auto 3em auto;
+	max-width: 90%;
+	a.nav-back {
+		float: left;
+		&:before {
+			content: "« ";
+		}
+
+	}
+	a.nav-forward {
+		float: right;
+		&:after {
+			content: " »";
+		}
+	}
+}
+
+.top-nav {
+	padding-top: 2em;
+}

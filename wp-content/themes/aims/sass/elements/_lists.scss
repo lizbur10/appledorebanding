@@ -1,0 +1,42 @@
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+.site-content ul {
+	list-style-type: none;
+	margin-left: 0;
+    li:before {
+        content: "";
+        line-height: 1em; 
+        float: left;
+        margin-left: -1em;
+        margin-top: .5em;
+        width: .4em;
+        height: .4em;
+        background-color: $color__green;
+        border-radius: 30%;
+
+    }
+}

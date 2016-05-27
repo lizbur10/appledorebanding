@@ -1,0 +1,37 @@
+$color__black: #0D1321;
+$color__blue-dark: #1A3659;
+$color__blue-medium: #466893;
+$color__green: #7ABA94;
+$color__yellow: #E8E07D;
+$color__yellow-medium: #F8F5D4;
+$color__yellow-light: #FFFCE8;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $color__blue-dark; 
+$color__link-visited: inherit;
+$color__link-hover: #466893; /* Medium blue */
+$color__text-main: #0D1321; /* Black */
+
+
+/* Still need to set button colors */
+$color__button-background: #7ABA94; /* Green */
+$color__button-hover: #E8E07D; /* Yellow */
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: $color__black;
+$color__border-button-focus: $color__black;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+$color__h1: #7ABA94; /* Green */
+$color__h2: #1A3659; /* Dark blue */
+$color__h3: #0D1321; /* Black */
+$color__h4: #0D1321; /* Black */

@@ -1,0 +1,23 @@
+body {
+	font-family: 'Marcellus SC', serif;
+}
+
+img {
+	display: block;
+	max-width: 500px;
+	margin: 5em auto;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	color: #7ABA94; /* Green */
+	font-size: 1.75em;
+}
+
+h2 {
+	color: #1A3659; /* Dark blue */
+	font-size: 1.5em;
+}

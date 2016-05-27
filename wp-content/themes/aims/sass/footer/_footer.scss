@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 24, 2016, 11:29:17 AM
+    Author     : lizburton
+*/
+
+footer.site-footer {
+	color: #fff;
+    padding: 3em 0 0.1em;
+    background-image: url('img/lovely-grass-wallpaper_cropped.jpg');
+   	background-size: cover;
+	width: 100%;
+	margin: -2em auto;
+	.site-info {
+		font-size: 0.9rem;
+		text-align: center;
+	}
+}

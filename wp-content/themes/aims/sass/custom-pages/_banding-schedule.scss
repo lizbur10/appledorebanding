@@ -1,0 +1,67 @@
+.banding-schedule {
+	max-width: 960px;
+	.column-one, .column-two, .column-three, .column-four, .column-five, .column-six, .column-seven {
+		width: 14%;
+	}
+	h1 {
+		text-align: center;
+	}
+	.header-row {
+		display: none;
+	}
+
+
+
+
+	td {
+		display: block;
+		span {
+			&:first-of-type {
+				color: $color__green;
+				&::after {
+					content: ": ";
+				}
+			}
+			&::after {
+				content: ", ";
+			}
+			&:last-of-type::after {
+				content: "";
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 680px) {
+	.banding-schedule {
+		table .header-row.long-day {
+			display: table-row;
+			font-style: italic;
+			text-align: center;
+		}
+		td {
+			display: table-cell;
+			border: 1px solid #ccc;
+			vertical-align: top;
+			padding: 0.5em;
+			span {
+				display: block; 
+				&:first-of-type {
+					text-align: center;
+					margin-bottom: 1em;
+					&::after {
+						content: "";
+					}
+				}
+				&::after {
+					content: "";
+				}
+			}
+		}
+		.after-schedule-content {
+			margin-left: 0.5em;
+		}
+	}
+}
+

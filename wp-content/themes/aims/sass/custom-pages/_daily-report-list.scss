@@ -1,0 +1,35 @@
+h1 {
+	margin-bottom: 2em;
+}
+
+article {
+	margin-bottom: 4em;
+	span {
+		display: block;
+	}
+	.report-date {
+		font-weight: bold;
+		color: $color__blue-medium;
+		font-size: 1.1em;
+	}
+
+	.float-container {
+		display: inline-block;
+		vertical-align: middle;
+		&:first-of-type {
+			width: 30%;
+		}
+		&:last-of-type {
+			width: 68%;
+		}
+	}
+
+	.excerpt {
+		float: left;
+		padding-left: 2em;
+	}
+
+	.thumbnail {
+		float: right;
+	}
+}
